@@ -21,6 +21,6 @@ function App() {
       </header>
     </div>
   );
-} hello bye 
+} 
 
 export default App;
