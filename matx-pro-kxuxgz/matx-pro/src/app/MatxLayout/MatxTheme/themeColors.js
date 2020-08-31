@@ -1,5 +1,5 @@
 const textLight = {
-  primary: "rgba(52, 49, 76, 1)",
+  primary: "rgba(52, 49, 76, 1)", 
   secondary: "rgba(52, 49, 76, 0.54)",
   disabled: "rgba(52, 49, 76, 0.38)",
   hint: "rgba(52, 49, 76, 0.38)"
@@ -16,7 +16,7 @@ export const themeColors = {
     palette: {
       type: "light",
       primary: {
-        main: "#ffffff",
+        main: "#ffffff", //Prev: #ffffff
         contrastText: textLight.primary
       },
       secondary: {

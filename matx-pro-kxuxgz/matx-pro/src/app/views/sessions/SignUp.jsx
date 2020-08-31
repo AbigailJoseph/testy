@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
   cardHolder: {
-    background: "#1A2038",
+    background: "#FFB35C", //prev: #1A2038
   },
   card: {
     maxWidth: 800,
@@ -37,7 +37,7 @@ const SignUp = () => {
     console.log(state);
   };
 
-  let { username, email, password, agreement } = state;
+  let { name, email, schoolName, password, agreement } = state;
 
   return (
     <div
@@ -62,15 +62,26 @@ const SignUp = () => {
                 <TextValidator
                   className="mb-6 w-full"
                   variant="outlined"
-                  label="Username"
+                  label="Name"
                   onChange={handleChange}
                   type="text"
-                  name="username"
-                  value={username || ""}
+                  name="name"
+                  value={name || ""}
                   validators={["required"]}
                   errorMessages={["this field is required"]}
                 />
                 <TextValidator
+                  className="mb-6 w-full"
+                  label="School Name"
+                  variant="outlined"
+                  onChange={handleChange}
+                  name="schoolName"
+                  type="schoolName"
+                  value={schoolName || ""}
+                  validators={["required"]}
+                  errorMessages={["this field is required"]}
+                />
+                  <TextValidator
                   className="mb-6 w-full"
                   variant="outlined"
                   label="Email"
@@ -94,17 +105,6 @@ const SignUp = () => {
                   value={password || ""}
                   validators={["required"]}
                   errorMessages={["this field is required"]}
-                />
-                <FormControlLabel
-                  className="mb-4"
-                  name="agreement"
-                  onChange={(e) =>
-                    handleChange({
-                      target: { name: "agreement", value: e.target.checked },
-                    })
-                  }
-                  control={<Checkbox checked={agreement || false} />}
-                  label="I have read and agree to the terms of service."
                 />
                 <div className="flex items-center">
                   <Button

@@ -19,7 +19,7 @@ import clsx from "clsx";
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
   cardHolder: {
-    background: "#1A2038",
+    background: "#FFB35C", // prev: #1A2038
   },
   card: {
     maxWidth: 800,
@@ -89,7 +89,7 @@ const SignIn = () => {
                   validators={["required", "isEmail"]}
                   errorMessages={[
                     "this field is required",
-                    "email is not valid",
+                    "username is not valid",
                   ]}
                 />
                 <TextValidator
@@ -102,32 +102,17 @@ const SignIn = () => {
                   value={userInfo.password || ""}
                   validators={["required"]}
                   errorMessages={["this field is required"]}
-                />
-                <FormControlLabel
-                  className="mb-3"
-                  name="agreement"
-                  onChange={handleChange}
-                  control={
-                    <Checkbox
-                      onChange={({ target: { checked } }) =>
-                        handleChange({
-                          target: { name: "agreement", value: checked },
-                        })
-                      }
-                      checked={userInfo.agreement || false}
-                    />
-                  }
-                  label="I have read and agree to the terms of service."
-                />
-                <div className="flex flex-wrap items-center mb-4">
+                /> 
+                 
+                <div className="flex flex-wrap items-center mb-4"> 
                   <div className="relative">
                     <Button
                       variant="contained"
-                      color="primary"
+                      color ="secondary" //prev: primary
                       disabled={loading}
                       type="submit"
                     >
-                      Sign in to Enter Dashboard
+                      Sign in
                     </Button>
                     {loading && (
                       <CircularProgress
