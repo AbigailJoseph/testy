@@ -70,7 +70,7 @@ const SignIn = () => {
             <div className="p-8 flex justify-center items-center h-full">
               <img
                 className="w-200"
-                src="/assets/images/illustrations/dreamer.svg"
+                src="/assets/images/illustrations/FokusTheFox.svg"
                 alt=""
               />
             </div>
@@ -108,7 +108,7 @@ const SignIn = () => {
                   <div className="relative">
                     <Button
                       variant="contained"
-                      color ="secondary" //prev: primary
+                      color ="primary" //prev: primary
                       disabled={loading}
                       type="submit"
                     >
