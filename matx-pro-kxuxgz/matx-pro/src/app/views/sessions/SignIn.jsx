@@ -129,12 +129,6 @@ const SignIn = () => {
                     Sign up
                   </Button>
                 </div>
-                <Button
-                  className="text-primary"
-                  onClick={() => history.push("/session/forgot-password")}
-                >
-                  Forgot password?
-                </Button>
               </ValidatorForm>
             </div>
           </Grid>
