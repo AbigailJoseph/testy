@@ -33,6 +33,7 @@ const useStyles = makeStyles(({ palette, ...theme }) => ({
     marginTop: -12,
     marginLeft: -12,
   },
+
 }));
 
 const SignIn = () => {
@@ -58,12 +59,19 @@ const SignIn = () => {
   };
 
   return (
+
+    
     <div
       className={clsx(
         "flex justify-center items-center  min-h-full-screen",
         classes.cardHolder
       )}
     >
+      <div className=" text-left mb-11 wrap">
+        <h3 className="m-0 font-large">
+          Welcome to Fokus!
+        </h3>
+      </div>
       <Card className={classes.card}>
         <Grid container>
           <Grid item lg={5} md={5} sm={5} xs={12}>
@@ -108,7 +116,7 @@ const SignIn = () => {
                   <div className="relative">
                     <Button
                       variant="contained"
-                      color ="primary" //prev: primary
+                      color ="primary" 
                       disabled={loading}
                       type="submit"
                     >

@@ -88,8 +88,7 @@ const Layout1 = () => {
             <div className="relative flex-grow">
               <MatxSuspense>{renderRoutes(routes)}</MatxSuspense>
             </div>
-            {settings.footer.show && !settings.footer.fixed && <Footer />}
-          </Scrollbar>
+        </Scrollbar>
         )}
 
         {!settings.perfectScrollbar && (
@@ -102,11 +101,9 @@ const Layout1 = () => {
             <div className="relative flex-grow">
               <MatxSuspense>{renderRoutes(routes)}</MatxSuspense>
             </div>
-            {settings.footer.show && !settings.footer.fixed && <Footer />}
           </div>
         )}
 
-        {settings.footer.show && settings.footer.fixed && <Footer />}
       </div>
       {settings.secondarySidebar.show && <SecondarySidebar />}
     </div>

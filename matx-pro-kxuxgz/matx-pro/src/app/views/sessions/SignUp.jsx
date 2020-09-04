@@ -5,9 +5,11 @@ import {
   FormControlLabel,
   Grid,
   Button,
+  CircularProgress,
 } from "@material-ui/core";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import { makeStyles } from "@material-ui/core/styles";
+import history from "history.js";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
 
@@ -19,6 +21,13 @@ const useStyles = makeStyles(({ palette, ...theme }) => ({
     maxWidth: 800,
     borderRadius: 12,
     margin: "1rem",
+  },
+  buttonProgress: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    marginTop: -12,
+    marginLeft: -12,
   },
 }));
 
@@ -46,6 +55,11 @@ const SignUp = () => {
         classes.cardHolder
       )}
     >
+       <div className=" text-left mb-11 wrap">
+        <h3 className="m-0 font-large">
+          Welcome to Fokus!
+        </h3>
+      </div>
       <Card className={classes.card}>
         <Grid container>
           <Grid item lg={5} md={5} sm={5} xs={12}>
@@ -112,11 +126,12 @@ const SignUp = () => {
                     variant="contained"
                     color="primary"
                     type="submit"
+                    onClick={() => history.push("/session/signup")}
                   >
                     Sign up
                   </Button>
                   <span className="mx-2 ml-5">or</span>
-                  <Link to="/session/signin">
+                  <Link to="/session/SignIn">
                     <Button className="capitalize">Sign in</Button>
                   </Link>
                 </div>

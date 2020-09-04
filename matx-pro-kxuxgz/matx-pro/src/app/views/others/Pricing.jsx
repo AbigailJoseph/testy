@@ -32,7 +32,7 @@ const Pricing = () => {
       </Card>
 
       <div className="w-full text-center mb-11">
-        <h3 className="m-0 font-medium">
+        <h3 className="m-0 font-large">
           Choose the plan that's right for your team
         </h3>
         <p className="m-0 pt-4 text-muted">
