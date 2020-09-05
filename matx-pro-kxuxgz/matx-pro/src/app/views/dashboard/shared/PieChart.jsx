@@ -9,11 +9,9 @@ const PieChart = () => {
 
   return (
     <Fragment>
-        <Grid container spacing={3}  justify="flex-end">
-          <Grid item md={6} xs={12}>
             <Card className="px-6 py-4 mb-6">
-              <div className="card-title">Traffic Sources</div>
-              <div className="card-subtitle">Last 30 days</div>
+              <div className="card-title">My Time Spent</div>
+              <div className="card-subtitle">This Week</div>
               <DoughnutChart
                 height="300px"
                 color={[
@@ -23,8 +21,6 @@ const PieChart = () => {
                 ]}
               />
              </Card>
-             </Grid>
-             </Grid>
        </Fragment>
   );
 };

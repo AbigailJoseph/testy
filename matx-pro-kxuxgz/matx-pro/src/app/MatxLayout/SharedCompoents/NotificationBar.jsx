@@ -91,7 +91,7 @@ const NotificationBar = ({ container }) => {
               : parentThemePalette.text.primary,
         }}
       >
-        <Badge color="secondary" badgeContent={5}>
+        <Badge color="primary" badgeContent={5}>
           <Icon>notifications</Icon>
         </Badge>
       </IconButton>

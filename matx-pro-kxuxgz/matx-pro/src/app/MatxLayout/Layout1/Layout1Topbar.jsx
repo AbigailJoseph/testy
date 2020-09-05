@@ -26,7 +26,7 @@ const useStyles = makeStyles(({ palette, ...theme }) => ({
       "linear-gradient(180deg, rgba(255, 255, 255, 0.95) 44%, rgba(247, 247, 247, 0.4) 50%, rgba(255, 255, 255, 0))",
 
     "& .topbar-hold": {
-      backgroundColor: palette.primary.main,
+      backgroundColor: palette.secondary.main,
       height: 80,
       paddingLeft: 18,
       paddingRight: 20,
@@ -94,33 +94,15 @@ const Layout1Topbar = () => {
   return (
     <div className={classes.topbar}>
       <div className={clsx({ "topbar-hold": true, fixed: fixed })}>
-        <div className="flex justify-between items-center h-full">
-          <div className="flex">
-            <IconButton onClick={handleSidebarToggle} className="hide-on-pc">
-              <Icon>menu</Icon>
-            </IconButton>
-
-            <div className="hide-on-mobile">
-              <IconButton>
-                <Icon>mail_outline</Icon>
-              </IconButton>
-
-              <IconButton>
-                <Icon>web_asset</Icon>
-              </IconButton>
-
-              <IconButton>
-                <Icon>star_outline</Icon>
-              </IconButton>
-            </div>
-          </div>
-          <div className="flex items-center">
+        <div className="flex justify-end items-end h-full">
+         
+          <div className="flex items-end">
             <MatxSearchBox />
 
             <NotificationBar />
 
             <ShoppingCart />
-
+      
             <MatxMenu
               menuButton={
                 <Avatar

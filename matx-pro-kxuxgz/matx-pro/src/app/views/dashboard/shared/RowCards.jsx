@@ -31,7 +31,6 @@ const RowCards = () => {
         <Grid container alignItems="center">
           <Grid item md={5} xs={7}>
             <div className="flex items-center">
-              <Checkbox />
               <Hidden smDown>
                 {id % 2 === 1 ? (
                   <Fab className="ml-4 bg-error box-shadow-none" size="small">

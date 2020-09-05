@@ -13,7 +13,7 @@ const DoughnutChart = ({ height, color = [] }) => {
       bottom: 0,
       textStyle: {
         color: theme.palette.text.secondary,
-        fontSize: 13,
+        fontSize: 14,
         fontFamily: "roboto",
       },
     },
@@ -70,7 +70,7 @@ const DoughnutChart = ({ height, color = [] }) => {
               fontWeight: "normal",
               // color: "rgba(15, 21, 77, 1)"
             },
-            formatter: "{b} \n{c} ({d}%)",
+            formatter: "{b} \n {d}%",
           },
         },
         labelLine: {
@@ -81,13 +81,13 @@ const DoughnutChart = ({ height, color = [] }) => {
         data: [
           {
             value: 65,
-            name: "Google",
+            name: "Math",
           },
           {
             value: 20,
-            name: "Facebook",
+            name: "Science",
           },
-          { value: 15, name: "Others" },
+          { value: 15, name: "English" },
         ],
         itemStyle: {
           emphasis: {

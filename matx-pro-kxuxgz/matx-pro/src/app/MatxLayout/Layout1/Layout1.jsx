@@ -5,7 +5,6 @@ import Scrollbar from "react-perfect-scrollbar";
 import { renderRoutes } from "react-router-config";
 import Layout1Topbar from "./Layout1Topbar";
 import Layout1Sidenav from "./Layout1Sidenav";
-import Footer from "../SharedCompoents/Footer";
 import SecondarySidebar from "../SharedCompoents/SecondarySidebar/SecondarySidebar";
 import AppContext from "app/appContext";
 import { MatxSuspense } from "matx";
