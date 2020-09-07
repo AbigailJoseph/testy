@@ -104,7 +104,7 @@ const Layout1 = () => {
         )}
 
       </div>
-      {settings.secondarySidebar.show && <SecondarySidebar />}
+     
     </div>
   );
 };

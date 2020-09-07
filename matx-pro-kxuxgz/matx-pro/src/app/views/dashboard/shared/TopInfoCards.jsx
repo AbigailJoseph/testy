@@ -1,6 +1,7 @@
 import React from "react";
-import { Grid, Card, Icon, Button, IconButton, Tooltip } from "@material-ui/core";
+import { Grid, Card, Icon, Button, MenuItem, IconButton, Tooltip } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
   icon: {
@@ -37,6 +38,8 @@ const TopInfoCards = () => {
           <div className="flex items-center">
             <Icon className={classes.icon}>laptop_mac</Icon>
           </div>
+          <MenuItem>
+          <Link className={classes.menuItem} to="/session/signin">
           <Button
           className="uppercase"
           size="large"
@@ -46,6 +49,8 @@ const TopInfoCards = () => {
         >
           start studying
         </Button>
+        </Link>
+        </MenuItem>
         </Card>
         </Grid>
     </Grid>

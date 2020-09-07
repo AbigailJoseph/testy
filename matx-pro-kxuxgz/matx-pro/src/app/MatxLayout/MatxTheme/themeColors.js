@@ -175,6 +175,21 @@ export const themeColors = {
         main: "#FFAF38",
         contrastText: textLight.primary
       }
+      
+    }
+  },
+  main: {
+    palette: {
+      type: "light",
+      primary: {
+        main: "#fac38e",
+        contrastText: "#ffffff"
+      },
+      secondary: {
+        main: "#83c0eb",
+        contrastText: textLight.primary
+      },
+      text: textLight
     }
   }
 };

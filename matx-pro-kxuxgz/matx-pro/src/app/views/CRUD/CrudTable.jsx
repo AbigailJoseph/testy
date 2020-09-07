@@ -124,7 +124,7 @@ const CrudTable = () => {
                   </TableCell>
                   <TableCell className="px-0">
                     {user.isActive ? (
-                      <small className=" bg-primary elevation-z3 text-white px-2 py-2px">
+                      <small className="rounded bg-primary elevation-z3 text-white px-2 py-2px">
                         active
                       </small>
                     ) : (

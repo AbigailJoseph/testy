@@ -11,8 +11,7 @@ const SecondarySidebar = () => {
 
   return (
     <SecondarySidenavTheme theme={secondarySidebarTheme}>
-      {settings.secondarySidebar.open && <SecondarySidebarContent />}
-      <SecondarySidebarToggle />
+      {settings.secondarySidebar.open && <SecondarySidebarContent />} 
     </SecondarySidenavTheme>
   );
 };

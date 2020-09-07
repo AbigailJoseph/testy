@@ -59,7 +59,7 @@ function ShoppingCart({ container }) {
               : parentThemePalette.text.primary,
         }}
       >
-        <Badge color="primary" badgeContent={cartList.length}>
+        <Badge color="secondary" badgeContent={cartList.length}>
           <Icon>shopping_cart</Icon>
         </Badge>
       </IconButton>
