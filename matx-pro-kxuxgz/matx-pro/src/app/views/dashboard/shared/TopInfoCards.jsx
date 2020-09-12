@@ -32,12 +32,12 @@ const TopInfoCards = () => {
       </Grid>
       <Grid item xs={12} md={6}>  
       <Card
-          className="flex flex-wrap justify-between items-center p-sm-24 bg-paper"
+          className="flex flex-wrap justify-center items-center p-sm-24 bg-paper"
           elevation={6}
         >
           <div className="flex items-center">
             <Icon className={classes.icon}>laptop_mac</Icon>
-          </div>
+          <div classname ="ml-3">
           <MenuItem>
           <Link className={classes.menuItem} to="/session/signin">
           <Button
@@ -45,12 +45,14 @@ const TopInfoCards = () => {
           size="large"
           variant="contained"
           color="secondary"
-          justify ="center"
+          justify ="flex-end"
         >
           start studying
         </Button>
         </Link>
         </MenuItem>
+        </div>
+        </div>
         </Card>
         </Grid>
     </Grid>

@@ -81,12 +81,12 @@ class CustomizedDialogs extends React.Component {
           open={this.state.open}
         >
           <DialogTitle id="customized-dialog-title" onClose={this.handleClose}>
-            Sun Challenge
+            Star Challenge
           </DialogTitle>
           <DialogContent dividers>
             <Typography gutterBottom>
-              To complete the Sun Challenge you must study for 4 hours within the next week.
-              Upon succesful completetion you will recive the Sun Badge as a token of completetion.
+              To complete the Star Challenge you must study for 7 hours within the next 5 days.
+              Upon succesful completetion you will recive the Star Badge as a token of completetion.
             </Typography>
           </DialogContent>
         </Dialog>

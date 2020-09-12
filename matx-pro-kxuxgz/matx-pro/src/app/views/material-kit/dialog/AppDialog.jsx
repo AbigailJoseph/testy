@@ -6,7 +6,7 @@ import AlertDialogSlide from "./DialogTransition";
 import FormDialog from "./FormDialog";
 import CustomizedDialogs from "./CustomizedDialog";
 import FullScreenDialog from "./FullScreenDialog";
-import MaxWidthDialog from "./OptimalSizeDialog";
+import MaxWidthDialog from "./CustomizedDialog2";
 import ResponsiveDialog from "./ResponsiveDialog";
 import ConfirmationDialog from "./ConfirmationDialog";
 
