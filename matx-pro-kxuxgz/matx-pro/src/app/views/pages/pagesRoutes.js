@@ -2,8 +2,8 @@ import React from "react";
 
 const pagesRoutes = [
   {
-    path: "/pages/user-list-1",
-    component: React.lazy(() => import("./UserList1")),
+    path: "/pages/start-studying-page",
+    component: React.lazy(() => import("./StartStudyingPage")),
   },
   {
     path: "/pages/user-list-2",

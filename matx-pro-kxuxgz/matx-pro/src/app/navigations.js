@@ -2,10 +2,16 @@ import { authRoles } from "./auth/authRoles";
 
 export const navigations = [
   {
-    name: "Dashboard",
+    name: "Home",
     path: "/dashboard/analytics",
-    icon: "dashboard",
+    icon: "home",
     // auth: authRoles.guest
+  }, 
+  {
+    name: "Challenges",
+    path: "/pages/start-studying-page",
+    icon: "create",
+    
   },
   {
     name: "Pages",
@@ -16,11 +22,11 @@ export const navigations = [
         name: "User List",
         iconText: "L",
         children: [
-          {
+          /*{
             name: "User List 1",
             path: "/pages/user-list-1",
             iconText: "U1",
-          },
+          },*/
           {
             name: "User List 2",
             path: "/pages/user-list-2",

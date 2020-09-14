@@ -8,6 +8,7 @@ import { useTheme } from "@material-ui/styles";
 
 const Analytics = () => {
   const theme = useTheme();
+  
 
   return (
     <Fragment>
@@ -15,7 +16,7 @@ const Analytics = () => {
         <div className="  text-black  text-40 font-medium">
           Welcome [Name]!
         </div>
-      </div>
+      </div>     
       <div className="analytics m-sm-30 mt--18">
         <Grid container spacing  = {3}  justify= "flex-start" direction = "row">
         <Grid item lg={8} md={8} sm={12} xs={12}>   

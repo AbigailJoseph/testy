@@ -39,7 +39,7 @@ const TopInfoCards = () => {
             <Icon className={classes.icon}>laptop_mac</Icon>
           <div classname ="ml-3">
           <MenuItem>
-          <Link className={classes.menuItem} to="/session/signin">
+          <Link className={classes.menuItem} to="/pages/start-studying-page">
           <Button
           className="uppercase"
           size="large"
