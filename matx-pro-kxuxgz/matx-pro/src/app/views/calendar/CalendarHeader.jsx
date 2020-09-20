@@ -11,7 +11,7 @@ const useStyles = makeStyles(({ palette, ...theme }) => ({
   },
 }));
 
-const viewNameListObject = {
+/*const viewNameListObject = {
   month: {
     name: "Month",
     icon: "view_module",
@@ -32,7 +32,7 @@ const viewNameListObject = {
     name: "Agenda",
     icon: "view_agenda",
   },
-};
+};*/
 
 const CalendarHeader = ({
   views: viewNameList,
@@ -45,7 +45,7 @@ const CalendarHeader = ({
 
   const renderViewButtons = () => {
     if (viewNameList.length > 1) {
-      return viewNameList.map((view) => (
+      /*return viewNameList.map((view) => (
         <Tooltip title={viewNameListObject[view].name} key={view}>
           <div>
             <IconButton
@@ -59,13 +59,13 @@ const CalendarHeader = ({
             </IconButton>
           </div>
         </Tooltip>
-      ));
+      ));*/
     }
   };
 
   return (
     <div
-      className={clsx("flex py-1 justify-around bg-primary", classes.header)}
+      className={clsx("flex py-1 justify-around bg-light-green", classes.header)}
     >
       <div className="flex justify-center">
         <Tooltip title="Previous">

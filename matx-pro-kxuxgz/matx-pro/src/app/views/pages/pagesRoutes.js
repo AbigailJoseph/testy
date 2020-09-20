@@ -6,16 +6,16 @@ const pagesRoutes = [
     component: React.lazy(() => import("./StartStudyingPage")),
   },
   {
-    path: "/pages/user-list-2",
-    component: React.lazy(() => import("./UserList2")),
+    path: "/pages/groups-page",
+    component: React.lazy(() => import("./GroupsPage")),
   },
   {
-    path: "/pages/user-list-3",
-    component: React.lazy(() => import("./UserList3")),
+    path: "/pages/challenges-page",
+    component: React.lazy(() => import("./ChallengesPage")),
   },
   {
-    path: "/pages/user-list-4",
-    component: React.lazy(() => import("./UserList4")),
+    path: "/pages/badges-page",
+    component: React.lazy(() => import("./BadgesPage")),
   },
   {
     path: "/pages/faq-1",

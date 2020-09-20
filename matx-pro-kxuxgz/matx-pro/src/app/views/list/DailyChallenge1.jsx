@@ -6,13 +6,15 @@ import {
   Icon,
   IconButton,
   Checkbox,
+  MenuItem,
   Fab,
   Avatar,
   Hidden,
+  Button,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import CustomizedDialog2 from "../../material-kit/dialog/CustomizedDialog2";
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
   projectName: {
@@ -23,14 +25,15 @@ const useStyles = makeStyles(({ palette, ...theme }) => ({
   },
 }));
 
-const ChallengeCard2 = () => {
+const DailyChallenge1 = () => {
   const classes = useStyles();
+
 
 return (
    <Fragment>
       <Card className="py-2 px-4 project-card">
         <Grid container alignItems="center">
-          <Grid item md={5} xs={7}>
+          <Grid item md={3} xs={4}>
             <div className="flex items-center">
               <Hidden smDown>
                 <Fab className="ml-4 bg-secondary box-shadow-none" size="small">
@@ -42,17 +45,37 @@ return (
               </Hidden>
             </div>
           </Grid>
-          <Grid item md={5}xs={7}>
-          <div className="flex justify-end items-center text-muted text-16">
-            Completed: 
-          {format(new Date().getTime(), " MM/dd/yyyy   ")}
+          <Grid item md={5}xs={6}>
+          <div className="flex justify-center items-center text-muted text-14"> 
+          Study one subject for an hour straight
           </div>
           </Grid>
-          <Grid item md={2}xs={3}>
-            <div className="flex justify-end">
-            <CustomizedDialog2/>
-            </div>
-          </Grid>
+          <Grid item md={2}xs={3}>  
+          <div className="flex justify-end  items-center"> 
+          <Link className={classes.menuItem} to="/challenge-confirmation">
+          <Button
+          className="uppercase"
+          size="small"
+          variant="contained"
+          justify ="flex-end"
+        >
+          Begin solo
+        </Button>
+        </Link>
+        </div>
+        </Grid>
+        <Grid item md={2}xs={3}>  
+          <div className="flex justify-end  items-center"> 
+          <Button
+          className="uppercase"
+          size="small"
+          variant="contained"
+          justify ="flex-end"
+        >
+          Begin in group
+        </Button>
+        </div>
+        </Grid>
         </Grid>
       </Card>
       <div className="py-2" />
@@ -60,4 +83,4 @@ return (
 );
 };
 
-export default ChallengeCard2;
+export default DailyChallenge1;

@@ -16,7 +16,7 @@ import clsx from "clsx";
 const useStyles = makeStyles(({ palette, ...theme }) => ({
   calendar: {
     "& .rbc-event": {
-      background: "rgba(var(--primary),1) !important",
+      background: "rgba(var(--secondary),1) !important",
     },
     "& .rbc-selected": {
       background: "rgba(var(--secondary),1) !important",
@@ -99,10 +99,10 @@ const MatxCalendar = () => {
   return (
     <div className="m-sm-30">
       <div className="mb-sm-30">
-        <Breadcrumb routeSegments={[{ name: "Calendar" }]} />
+       {/* <Breadcrumb routeSegments={[{ name: "Calendar" }]} />*/}
       </div>
 
-      <Button
+     {/* <Button
         className="mb-4"
         variant="contained"
         color="secondary"
@@ -115,7 +115,7 @@ const MatxCalendar = () => {
         }
       >
         Add Event
-      </Button>
+      </Button> */}
       <div className={clsx("h-full-screen flex-column", classes.calendar)}>
         <div ref={headerComponentRef} />
         <DragAndDropCalendar

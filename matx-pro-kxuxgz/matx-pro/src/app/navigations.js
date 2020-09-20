@@ -8,25 +8,48 @@ export const navigations = [
     // auth: authRoles.guest
   }, 
   {
+    name: "Groups",
+    path: "/pages/groups-page",
+    icon: "view_quilt",
+    
+  },
+  {
     name: "Challenges",
-    path: "/pages/start-studying-page",
+    path: "/pages/challenges-page",
     icon: "create",
     
+  },
+  {
+    name: "Badges",
+    path: "/pages/badges-page",
+    icon: "school",
+    
+  },
+  {
+    name: "History",
+    path: "/calendar",
+    icon: "date_range",
+    
+  },
+ 
+  {
+    label: "Apps",
+    type: "label",
   },
   {
     name: "Pages",
     icon: "file_copy",
 
     children: [
-      {
+      /*{
         name: "User List",
         iconText: "L",
         children: [
-          /*{
+          {
             name: "User List 1",
             path: "/pages/user-list-1",
             iconText: "U1",
-          },*/
+          },
           {
             name: "User List 2",
             path: "/pages/user-list-2",
@@ -43,24 +66,24 @@ export const navigations = [
             iconText: "U3",
           },
         ]
-      },
-      {
+      },*/
+     /* {
         name: "Matx List",
         iconText: "M",
     
         children: [
           {
             name: "Infinite Scroll",
-            path: "/infinite-scroll",
+            path: "/daily-challenge-2",
             iconText: "I",
           },
           {
             name: "List",
-            path: "/matx-list",
+            path: "/daily-challenge-1",
             iconText: "L",
           },
         ],
-      },
+      },*/
       {
         name: "Help Center",
         iconText: "H",
@@ -112,10 +135,6 @@ export const navigations = [
         iconText: "L",
       },
     ],
-  },
-  {
-    label: "Apps",
-    type: "label",
   },
   {
     name: "Ecommerce",

@@ -5,16 +5,16 @@ const calendarEventDB = {
   events: [
     {
       id: "344jdfher3wh23",
-      title: "Meeting with all employees",
-      start: new Date(date.getFullYear(), date.getMonth(), 1),
-      end: new Date(date.getFullYear(), date.getMonth(), 3)
+      title: "4 hours total",
+      start: new Date(date.getFullYear(), date.getMonth(), 13),
+      end: new Date(date.getFullYear(), date.getMonth(), 13)
     },
-    {
+  /*  {
       id: "dfdfdsfedrevcr",
-      title: "A trip to Bali Island",
+      title: "5 hours total",
       start: new Date(),
-      end: new Date(date.getFullYear(), date.getMonth(), date.getDate() + 2)
-    }
+      end: new Date(date.getFullYear(), date.getMonth(), date.getDate() )
+    }*/
   ]
 };
 

@@ -12,7 +12,7 @@ import { Breadcrumb } from "matx";
 import Axios from "axios";
 import ProfileCard2 from "./ProfileCard2";
 
-const UserList4 = () => {
+const  BadgesPage = () => {
   const [isAlive, setIsAlive] = useState(true);
   const [userList, setUserList] = useState([]);
 
@@ -38,12 +38,12 @@ const UserList4 = () => {
   return (
     <div className="m-sm-30">
       <div className="mb-sm-30">
-        <Breadcrumb
+        {/*<Breadcrumb
           routeSegments={[
             { name: "Pages", path: "/pages" },
             { name: "User List 4" },
           ]}
-        />
+        />*/}
       </div>
       <Grid container spacing={2}>
         <Grid item md={3} sm={12} xs={12}>
@@ -111,4 +111,4 @@ const UserList4 = () => {
   );
 };
 
-export default UserList4;
+export default BadgesPage;

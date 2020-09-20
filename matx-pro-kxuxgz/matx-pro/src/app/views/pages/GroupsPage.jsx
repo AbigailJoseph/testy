@@ -3,7 +3,7 @@ import { Grid, Card, Avatar, Button } from "@material-ui/core";
 import { Breadcrumb } from "matx";
 import Axios from "axios";
 
-const UserList2 = () => {
+const GroupsPage = () => {
   const [isAlive, setIsAlive] = useState(true);
   const [userList, setUserList] = useState([]);
 
@@ -17,12 +17,12 @@ const UserList2 = () => {
   return (
     <div className="m-sm-30">
       <div className="mb-sm-30">
-        <Breadcrumb
+        {/*<Breadcrumb
           routeSegments={[
             { name: "Pages", path: "/pages" },
             { name: "User List 2" },
           ]}
-        />
+        />*/}
       </div>
       <Grid container spacing={3}>
         {userList.map((user, ind) => (
@@ -61,4 +61,4 @@ const UserList2 = () => {
   );
 };
 
-export default UserList2;
+export default GroupsPage;

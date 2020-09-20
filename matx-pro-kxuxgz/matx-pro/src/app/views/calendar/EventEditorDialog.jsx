@@ -1,13 +1,16 @@
-import React, { Component, useState } from "react";
-import { Dialog, IconButton, Button, Icon, Grid } from "@material-ui/core";
+import React, { Component, useState, Fragment } from "react";
+import { Dialog, IconButton, Button, Icon, Grid, Card} from "@material-ui/core";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import { MuiPickersUtilsProvider, DateTimePicker } from "@material-ui/pickers";
 import "date-fns";
 import DateFnsUtils from "@date-io/date-fns";
 import { addNewEvent, updateEvent, deleteEvent } from "./CalendarService";
+import DoughnutChart from "../charts/echarts/Doughnut";
+import { useTheme } from "@material-ui/styles";
 
 const EventEditorDialog = ({ event = {}, open, handleClose }) => {
   const [state, setState] = useState(event);
+  const theme = useTheme();
 
   const handleChange = (event) => {
     setState({ ...state, [event.target.name]: event.target.value });
@@ -57,15 +60,15 @@ const EventEditorDialog = ({ event = {}, open, handleClose }) => {
 
   return (
     <Dialog onClose={handleClose} open={open} maxWidth="xs" fullWidth={true}>
-      <div className="flex justify-between items-center pl-4 pr-2 py-2 bg-primary">
-        <h4 className="m-0 text-white">Add Events</h4>
+      <div className="flex justify-between items-center pl-4 pr-2 py-2 bg-secondary">
+        <h4 className="m-0 text-white">Study Breakdown</h4>
         <IconButton onClick={handleClose}>
           <Icon className="text-white">clear</Icon>
         </IconButton>
       </div>
-
+      
       <div className="p-4">
-        <ValidatorForm onSubmit={handleFormSubmit}>
+       {/* <ValidatorForm onSubmit={handleFormSubmit}>
           <TextValidator
             className="mb-6 w-full"
             label="Title"
@@ -75,9 +78,23 @@ const EventEditorDialog = ({ event = {}, open, handleClose }) => {
             value={title || ""}
             validators={["required"]}
             errorMessages={["this field is required"]}
-          />
-
-          <Grid container spacing={4}>
+          />*/}
+          <h4 className="m-0 text-black justify-between ">Total Hours Studied: [#]</h4>
+          <Fragment>
+            <Card className="px-6 py-4 mb-6">
+              <div className="card-title">My Time Spent</div>
+              <div className="card-subtitle">Today</div>
+              <DoughnutChart
+                height="300px"
+                color={[
+                  theme.palette.primary.dark,
+                  theme.palette.primary.main,
+                  theme.palette.primary.light,
+                ]}
+              />
+             </Card>
+       </Fragment>
+         {/* <Grid container spacing={4}>
             <Grid item sm={6} xs={12}>
               <MuiPickersUtilsProvider utils={DateFnsUtils}>
                 <DateTimePicker
@@ -142,8 +159,8 @@ const EventEditorDialog = ({ event = {}, open, handleClose }) => {
               <Icon className="mr-2 align-middle">delete</Icon>
               Delete
             </Button>
-          </div>
-        </ValidatorForm>
+          </div>*/}
+    
       </div>
     </Dialog>
   );
