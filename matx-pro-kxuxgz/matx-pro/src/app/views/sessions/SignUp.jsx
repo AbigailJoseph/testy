@@ -5,6 +5,7 @@ import {
   FormControlLabel,
   Grid,
   Button,
+  MenuItem,
   CircularProgress,
 } from "@material-ui/core";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
@@ -15,7 +16,7 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
   cardHolder: {
-    background: "#FFB35C", //prev: #1A2038
+    background: "#ADD8E6", //prev: #1A2038, #FFB35C
   },
   card: {
     maxWidth: 800,
@@ -33,6 +34,7 @@ const useStyles = makeStyles(({ palette, ...theme }) => ({
 
 const SignUp = () => {
   const [state, setState] = useState({});
+  const [loading, setLoading] = useState(false);
   const classes = useStyles();
 
   const handleChange = ({ target: { name, value } }) => {
@@ -46,7 +48,7 @@ const SignUp = () => {
     console.log(state);
   };
 
-  let { name, email, schoolName, password, agreement } = state;
+  let { name, email, grade, schoolName, password, agreement } = state;
 
   return (
     <div
@@ -55,11 +57,7 @@ const SignUp = () => {
         classes.cardHolder
       )}
     >
-       <div className=" text-left mb-11 wrap">
-        <h3 className="m-0 font-large">
-          Welcome to Fokus!
-        </h3>
-      </div>
+      
       <Card className={classes.card}>
         <Grid container>
           <Grid item lg={5} md={5} sm={5} xs={12}>
@@ -81,6 +79,17 @@ const SignUp = () => {
                   type="text"
                   name="name"
                   value={name || ""}
+                  validators={["required"]}
+                  errorMessages={["this field is required"]}
+                />
+                   <TextValidator
+                  className="mb-6 w-full"
+                  label="Grade"
+                  variant="outlined"
+                  onChange={handleChange}
+                  name="grade"
+                  type="grade"
+                  value={grade || ""}
                   validators={["required"]}
                   errorMessages={["this field is required"]}
                 />
@@ -121,17 +130,26 @@ const SignUp = () => {
                   errorMessages={["this field is required"]}
                 />
                 <div className="flex items-center">
+                <div className="relative">
                   <Button
                     className="capitalize"
                     variant="contained"
                     color="primary"
-                    type="submit"
-                    onClick={() => history.push("/session/signup")}
+                    disabled={loading}
+                    type="submit" 
+                    onClick={() => history.push("/session/signin")}
                   >
                     Sign up
-                  </Button>
+                  </Button> 
+                  {loading && (
+                      <CircularProgress
+                        size={24}
+                        className={classes.buttonProgress}
+                      />
+                    )}
+                    </div>
                   <span className="mx-2 ml-5">or</span>
-                  <Link to="/session/SignIn">
+                  <Link to="/session/signin">
                     <Button className="capitalize">Sign in</Button>
                   </Link>
                 </div>

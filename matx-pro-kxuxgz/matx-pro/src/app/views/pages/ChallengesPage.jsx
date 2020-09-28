@@ -12,7 +12,7 @@ import {
 } from "@material-ui/core";
 import { Breadcrumb } from "matx";
 import Axios from "axios";
-import ProfileCard1 from "./ProfileCard1";
+import ProfileCard1 from "./StudyConfirmation";
 import DailyChallenge1 from "../list/DailyChallenge1";
 import DailyChallenge2 from "../list/DailyChallenge2";
 import WeeklyChallenge1 from "../list/WeeklyChallenge1";

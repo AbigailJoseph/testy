@@ -15,12 +15,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
   contentWrap: ({ width, secondarySidebar }) => ({
-    verticalAlign: "top",
     marginLeft: width,
-    transition: "all 0.3s ease",
-    [theme.breakpoints.up("md")]: {
-      marginRight: secondarySidebar.open ? 50 : 0,
-    },
   }),
   topbar: {
     top: 0,

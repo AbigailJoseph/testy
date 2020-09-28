@@ -94,16 +94,16 @@ const Layout1Topbar = () => {
   return (
     <div className={classes.topbar}>
       <div className={clsx({ "topbar-hold": true, fixed: fixed })}>
-        <div className="flex justify-end items-end h-full">
+        <div className="flex justify-end items-center h-full">
          
-          <div className="flex items-end">
-            <MatxSearchBox />
+          <div className="flex items-center">
+           {/* <MatxSearchBox />
 
             <NotificationBar />
 
-            <ShoppingCart />
+            <ShoppingCart />*/}
       
-            <MatxMenu
+           {/*} <MatxMenu
               menuButton={
                 <Avatar
                   className="cursor-pointer mx-2"
@@ -122,19 +122,19 @@ const Layout1Topbar = () => {
                 className={classes.menuItem}
                 to="/page-layouts/user-profile"
               > */}
-                <Icon> person </Icon>
+              {/*}  <Icon> person </Icon>
                 <span className="pl-4"> Profile </span>
                 {/* </Link> */}
-              </MenuItem>
+             {/*} </MenuItem>
               <MenuItem className={classes.menuItem}>
                 <Icon> settings </Icon>
                 <span className="pl-4"> Settings </span>
-              </MenuItem>
+              </MenuItem> */}
               <MenuItem onClick={handleSignOut} className={classes.menuItem}>
                 <Icon> power_settings_new </Icon>
-                <span className="pl-4"> Logout </span>
+                <div className = "text-black"> Logout </div>
               </MenuItem>
-            </MatxMenu>
+           {/* </MatxMenu>*/}
           </div>
         </div>
       </div>

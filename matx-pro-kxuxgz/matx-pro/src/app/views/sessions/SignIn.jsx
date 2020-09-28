@@ -1,8 +1,6 @@
-import React from "react";
+import React, { Fragment } from "react";
 import {
   Card,
-  Checkbox,
-  FormControlLabel,
   Grid,
   Button,
   CircularProgress,
@@ -19,13 +17,9 @@ import clsx from "clsx";
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
   cardHolder: {
-    background: "#FFB35C", // prev: #1A2038
+    background: "#ADD8E6", // prev: #1A2038, #FFB35C
   },
-  card: {
-    maxWidth: 800,
-    borderRadius: 12,
-    margin: "1rem",
-  },
+
   buttonProgress: {
     position: "absolute",
     top: "50%",
@@ -59,19 +53,12 @@ const SignIn = () => {
   };
 
   return (
-
-    
-    <div
+   <div
       className={clsx(
         "flex justify-center items-center  min-h-full-screen",
         classes.cardHolder
       )}
     >
-      <div className=" text-left mb-11 wrap">
-        <h3 className="m-0 font-large">
-          Welcome to Fokus!
-        </h3>
-      </div>
       <Card className={classes.card}>
         <Grid container>
           <Grid item lg={5} md={5} sm={5} xs={12}>
@@ -142,7 +129,7 @@ const SignIn = () => {
           </Grid>
         </Grid>
       </Card>
-    </div>
+    </div>  
   );
 };
 

@@ -1,5 +1,9 @@
 import React from "react";
 import MatxLogo from "./MatxLogo";
+import {
+  Avatar, 
+  Grid,
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 import { useSelector } from "react-redux";
@@ -26,15 +30,10 @@ const Brand = ({ children }) => {
         <MatxLogo className="" /> */}
  
      {/*<img src="/assets/images/illustrations/FokusTheFox.svg"  />*/}
-
-        <span
-          className={clsx({
-            "text-18 ml-2 font-medium sidenavHoverShow": true,
-            [classes.hideOnCompact]: mode === "compact",
-          })}
-        >      
+            <div className= "text-18 ml-2 font-medium sidenavHoverShow">      
           Fokus
-        </span>
+        </div>
+         
       </div>
       <div
         className={clsx({

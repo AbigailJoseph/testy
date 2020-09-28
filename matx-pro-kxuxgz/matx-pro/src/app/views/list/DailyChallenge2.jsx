@@ -48,7 +48,7 @@ return (
           Study 3 different subject for at least 30 mins each 
           </div>
           </Grid>
-          <Grid item md={2}xs={3}>  
+          <Grid item md={4}xs={5}>  
           <div className="flex justify-end  items-center"> 
           <Link className={classes.menuItem} to="/challenge-confirmation">
           <Button
@@ -57,21 +57,9 @@ return (
           variant="contained"
           justify ="flex-end"
         >
-          Begin solo
+         Start Challenge
         </Button>
         </Link>
-        </div>
-        </Grid>
-        <Grid item md={2}xs={3}>  
-          <div className="flex justify-end  items-center"> 
-          <Button
-          className="uppercase"
-          size="small"
-          variant="contained"
-          justify ="flex-end"
-        >
-          Begin in group
-        </Button>
         </div>
         </Grid>
         </Grid>

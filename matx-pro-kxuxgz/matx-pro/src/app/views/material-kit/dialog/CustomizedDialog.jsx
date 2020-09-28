@@ -85,7 +85,7 @@ class CustomizedDialogs extends React.Component {
           </DialogTitle>
           <DialogContent dividers>
             <Typography gutterBottom>
-              To complete the Sun Challenge you must study for 4 hours within the next week.
+              To complete the Sun Challenge you must study 3 different subjects for at least 30 mins each.
               Upon succesful completetion you will recive the Sun Badge as a token of completetion.
             </Typography>
           </DialogContent>

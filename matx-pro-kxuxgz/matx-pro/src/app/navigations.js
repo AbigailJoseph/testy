@@ -8,8 +8,8 @@ export const navigations = [
     // auth: authRoles.guest
   }, 
   {
-    name: "Groups",
-    path: "/pages/groups-page",
+    name: "Leaderboard",
+    path: "/pages/leader-board",
     icon: "view_quilt",
     
   },

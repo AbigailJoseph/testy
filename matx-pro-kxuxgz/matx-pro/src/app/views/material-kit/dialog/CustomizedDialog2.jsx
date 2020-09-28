@@ -85,7 +85,7 @@ class CustomizedDialogs extends React.Component {
           </DialogTitle>
           <DialogContent dividers>
             <Typography gutterBottom>
-              To complete the Star Challenge you must study for 7 hours within the next 5 days.
+              To complete the Star Challenge you must study 1 subject for an hour straight.
               Upon succesful completetion you will recive the Star Badge as a token of completetion.
             </Typography>
           </DialogContent>

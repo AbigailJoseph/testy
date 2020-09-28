@@ -3,7 +3,7 @@ import { Grid, Card, Avatar, Button } from "@material-ui/core";
 import { Breadcrumb } from "matx";
 import Axios from "axios";
 
-const GroupsPage = () => {
+const LeaderBoard = () => {
   const [isAlive, setIsAlive] = useState(true);
   const [userList, setUserList] = useState([]);
 
@@ -61,4 +61,4 @@ const GroupsPage = () => {
   );
 };
 
-export default GroupsPage;
+export default LeaderBoard;

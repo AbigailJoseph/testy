@@ -17,6 +17,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 import ReactStopwatchTimer from 'react-stopwatch-timer';
 import Typography from "@material-ui/core/Typography";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
   google: {
@@ -128,7 +129,9 @@ const StartStudyingPage = () => {
       <ReactStopwatchTimer isOn={isOn} className="react-stopwatch-timer__table" watchType="stopwatch"
           displayCircle={true} color="gray" hintColor="orange" fromTime={fromTime}>
            <Button  color="primary" onClick={() =>  setIsOn(true) }>START</Button>
+           <Link className={classes.menuItem} to="/pages/study-confirmation">
            <Button color="primary" onClick={() =>  setIsOn(false) }>STOP</Button>
+           </Link>
        </ReactStopwatchTimer>
        <img
                 className="w-200"
@@ -137,8 +140,6 @@ const StartStudyingPage = () => {
               />
        </div>
        </Grid>
-              
-   
        </Grid>
        </Card>
        </div>
