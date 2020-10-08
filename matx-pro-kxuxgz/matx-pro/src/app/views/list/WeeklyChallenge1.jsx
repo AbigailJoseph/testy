@@ -34,11 +34,11 @@ return (
           <Grid item md={3} xs={4}>
             <div className="flex items-center">
               <Hidden smDown>
-                <Fab className="ml-4 bg-light-error box-shadow-none" size="small">
-                  <Icon>cloud_queue</Icon>
+                <Fab className="ml-4 bg-light-dark box-shadow-none" size="small">
+                  <Icon>brightness_3</Icon>
                 </Fab>
                 <div className="ml-3">
-                  <div className="font-large text-18">Cloud Challenge</div>
+                  <div className="font-large text-18">Moon Challenge</div>
                 </div>
               </Hidden>
             </div>

@@ -32,13 +32,13 @@ const useStyles = makeStyles(({ palette, ...theme }) => ({
   },
 }));
 
-const BadgesPage = () => {
+const MyBadgesPage = () => {
   const classes = useStyles();
 
   return (
     <div className="m-sm-30 relative">
       <div className=" justify-center text-black text-40 font-medium">
-           All Badges < SimpleMenu2/> 
+           My Badges < SimpleMenu2/> 
       </div>
       <div className=" justify-center text-muted-white  text-20 font-medium">
           
@@ -92,15 +92,5 @@ const planList = [
     image: "/assets/images/illustrations/illuminator2.svg",
     description: "You can collect this badge by completing the Sun Challenge",
   },
-  {
-    title: "the austronaut",
-    image: "/assets/images/illustrations/astronaut.svg",
-    description: "You can collect this badge by completing the Moon Challenge",
-  },
-  {
-    title: "enegizer",
-    image: "/assets/images/illustrations/enegizer2.svg",
-    description: "You can collect this badge by completing the Lightning Challenge",
-  },
 ];
-export default BadgesPage;
+export default MyBadgesPage;

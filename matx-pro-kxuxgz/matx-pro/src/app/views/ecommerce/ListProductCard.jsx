@@ -61,7 +61,7 @@ const ListProductCard = ({ product }) => {
                 onClick={() => handleAddProduct(user.userId, product.id)}
               >
                 <Icon className="mr-2">shopping_cart</Icon>
-                <span>Add to cart</span>
+                <span>Add to mart</span>
               </Button>
             </div>
           </div>

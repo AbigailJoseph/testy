@@ -14,20 +14,20 @@ const pagesRoutes = [
     component: React.lazy(() => import("./StartStudyingPage")),
   },
   {
-    path: "/pages/leader-board",
-    component: React.lazy(() => import("./LeaderBoard")),
+    path: "/pages/badges-page",
+    component: React.lazy(() => import("./BadgesPage")),
   },
   {
     path: "/pages/challenges-page",
     component: React.lazy(() => import("./ChallengesPage")),
   },
   {
-    path: "/pages/badges-page",
-    component: React.lazy(() => import("./BadgesPage")),
+    path: "/pages/leader-board-page",
+    component: React.lazy(() => import("./LeaderBoardPage")),
   },
   {
-    path: "/pages/faq-1",
-    component: React.lazy(() => import("./Faq1")),
+    path: "/pages/my-badges-page",
+    component: React.lazy(() => import("./MyBadgesPage")),
   },
   {
     path: "/pages/faq-2",

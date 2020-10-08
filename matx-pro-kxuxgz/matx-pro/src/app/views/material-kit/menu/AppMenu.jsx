@@ -1,6 +1,6 @@
 import React from "react";
 import SimpleMenu from "./SimpleMenu";
-import SelectedMenu from "./SelectedMenu";
+import SelectedMenu from "./SimpleMenu2";
 import CustomizedMenu from "./CustomizedMenu";
 import MaxHeightMenu from "./MaxHeightMenu";
 import { Breadcrumb, SimpleCard } from "matx";

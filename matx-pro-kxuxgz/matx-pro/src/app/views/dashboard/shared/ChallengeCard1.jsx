@@ -33,7 +33,7 @@ return (
           <Grid item md={5} xs={7}>
             <div className="flex items-center">
               <Hidden smDown>
-                <Fab className="ml-4 bg-primary box-shadow-none" size="small">
+                <Fab className="ml-4 bg-light-yellow box-shadow-none" size="small">
                   <Icon>brightness_5</Icon>
                 </Fab>
                 <div className="ml-3">

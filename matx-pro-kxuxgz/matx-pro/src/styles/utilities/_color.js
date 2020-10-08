@@ -4,12 +4,16 @@ export const colorStyles = makeStyles(({ palette, ...theme }) => ({
   "@global": {
     ".bg-primary": { background: `${palette.primary.main} !important` },
     ".bg-secondary": { background: `${palette.secondary.main} !important` },
-    ".bg-green": {
-      backgroundColor: "rgba(0, 128, 0, 0.75) !important",
-      background: "#08ad6c !important",
+    ".bg-light-yellow": {
+      backgroundColor: "rgba(251, 255, 181, 1) !important",
+      background: "#fbffb5 !important",
     },
-    ".bg-error": {
-      background: `${palette.error.main} !important`,
+    ".bg-light-purple": {
+      background: `rgba(196, 181, 255, 1) !important`,
+      color: "black !important",
+    },
+    ".bg-midnight": {
+      background: `rgba(45, 25, 125, 1) !important`,
       color: "white !important",
     },
     ".bg-white": { background: "#fff !important", color: "inherit" },
@@ -17,7 +21,7 @@ export const colorStyles = makeStyles(({ palette, ...theme }) => ({
     ".bg-paper": { background: `${palette.background.paper}` },
     ".bg-light-gray": { background: "rgba(0, 0, 0, 0.03) !important" },
     ".bg-dark": { background: "#000000", color: "#fff" },
-    ".bg-light-dark": { background: "#212121", color: "white" },
+    ".bg-light-dark": { background: "#212121", color: "white !important" },
     ".hover-bg-primary": { transition: "all 250ms" },
     ".hover-bg-primary:hover": {
       background: `${palette.primary.main} !important`,

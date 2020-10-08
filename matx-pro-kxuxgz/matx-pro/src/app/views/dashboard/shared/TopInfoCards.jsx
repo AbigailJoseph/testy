@@ -25,7 +25,7 @@ const TopInfoCards = () => {
             <Icon className={classes.icon}>access_time</Icon>
             <div className="ml-3">
               <large className="text-muted center text-20">Total Hours Studied This Week</large>
-              <h6 className="m-0 center mt-1 text-secondary text-20 ">[#]</h6>
+              <h6 className="m-0 center mt-1 text-secondary text-20 ">9</h6>
             </div>
           </div>
         </Card>

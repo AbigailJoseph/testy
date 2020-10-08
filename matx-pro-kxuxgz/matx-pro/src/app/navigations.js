@@ -9,7 +9,7 @@ export const navigations = [
   }, 
   {
     name: "Leaderboard",
-    path: "/pages/leader-board",
+    path: "/pages/leader-board-page",
     icon: "view_quilt",
     
   },

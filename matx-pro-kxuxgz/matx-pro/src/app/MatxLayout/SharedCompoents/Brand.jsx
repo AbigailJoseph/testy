@@ -28,12 +28,11 @@ const Brand = ({ children }) => {
       <div className="flex items-center">
         {/* <img src="/assets/images/logo.png" alt="company-logo" />
         <MatxLogo className="" /> */}
- 
      {/*<img src="/assets/images/illustrations/FokusTheFox.svg"  />*/}
-            <div className= "text-18 ml-2 font-medium sidenavHoverShow">      
+    
+            <div className= "text-20 font-bold ml-2 sidenavHoverShow">      
           Fokus
         </div>
-         
       </div>
       <div
         className={clsx({

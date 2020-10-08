@@ -15,9 +15,9 @@ const PieChart = () => {
               <DoughnutChart
                 height="300px"
                 color={[
-                  theme.palette.primary.dark,
-                  theme.palette.primary.main,
-                  theme.palette.primary.light,
+                  theme.palette.secondary.dark,
+                  theme.palette.secondary.main,
+                  theme.palette.secondary.light,
                 ]}
               />
              </Card>

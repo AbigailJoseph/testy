@@ -5,7 +5,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
-function SimpleMenu() {
+function SimpleMenu2() {
   const useStyles = makeStyles(({ palette, ...theme }) => ({
     projectName: {
       marginLeft: 24,
@@ -40,19 +40,14 @@ function SimpleMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <Link className={classes.menuItem} to="/pages/leader-board-page">
+        <Link className={classes.menuItem} to="/pages/badges-page">
         <MenuItem onClick={handleClose}>
-          Default
+          All
           </MenuItem>
           </Link>
-      <Link className={classes.menuItem} to="/page-layouts/leader-board-school">
+      <Link className={classes.menuItem} to="/pages/my-badges-page">
         <MenuItem onClick={handleClose}>
-          My School
-          </MenuItem>
-          </Link>
-      <Link className={classes.menuItem} to="/page-layouts/leader-board-grade">
-        <MenuItem onClick={handleClose}>
-          My Grade
+          My Badges
           </MenuItem>
           </Link>
       </Menu>
@@ -60,4 +55,4 @@ function SimpleMenu() {
   );
 }
 
-export default SimpleMenu;
+export default SimpleMenu2;

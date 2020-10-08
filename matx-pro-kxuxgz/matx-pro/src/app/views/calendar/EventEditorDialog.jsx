@@ -83,7 +83,7 @@ const EventEditorDialog = ({ event = {}, open, handleClose }) => {
           <Fragment>
             <Card className="px-6 py-4 mb-6">
               <div className="card-title">My Time Spent</div>
-              <div className="card-subtitle">Today</div>
+              <div className="card-subtitle">October 13th</div>
               <DoughnutChart
                 height="300px"
                 color={[

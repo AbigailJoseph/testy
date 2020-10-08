@@ -9,6 +9,8 @@ import Axios from "axios";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 import Typography from "@material-ui/core/Typography";
+import { Link } from "react-router-dom";
+
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
   google: {
@@ -70,7 +72,7 @@ const ChallengeConfirmation = () => {
           className="flex flex-wrap justify-center items-center p-sm-24 bg-paper"
           elevation={6}
         >
-        <Grid item lg={10} md={8} sm={10} xs={10}> 
+        <Grid item lg={12} md={10} sm={12} xs={12}> 
         <div className="flex items-center justify-center">
         <img
                 className="w-200"
@@ -78,7 +80,7 @@ const ChallengeConfirmation = () => {
                 alt=""
               />
            <div className=" justify-center text-black  text-40 font-medium">
-           Congratulations! You have officially signed up for the [...] Challenge
+           Congratulations! You have officially signed up for the Star Challenge
         </div>
         <img
                 className="w-200"
@@ -87,6 +89,20 @@ const ChallengeConfirmation = () => {
               />
         </div>
         </Grid>
+        <Grid item lg={10} md={8} sm={10} xs={10}> 
+        <div className="flex items-center justify-center">
+        <Link className={classes.menuItem} to="pages/start-studying-page">
+            <Button
+            className="uppercase"
+            size="small"
+            variant="contained"
+            justify ="flex-end"
+          >
+            Begin!
+          </Button>
+          </Link>
+          </div>
+       </Grid>
        </Card>
        </Grid>
        </Grid>

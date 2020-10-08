@@ -36,7 +36,7 @@ return (
           <Grid item md={3} xs={4}>
             <div className="flex items-center">
               <Hidden smDown>
-                <Fab className="ml-4 bg-secondary box-shadow-none" size="small">
+                <Fab className="ml-4 bg-light-purple box-shadow-none" size="small">
                   <Icon>star_outline</Icon>
                 </Fab>
                 <div className="ml-3">
@@ -50,7 +50,7 @@ return (
           Study one subject for an hour straight
           </div>
           </Grid>
-          <Grid item md={4}xs={5}>  
+          <Grid item md={4}xs={3}>  
           <div className="flex justify-end  items-center"> 
           <Link className={classes.menuItem} to="/challenge-confirmation">
           <Button

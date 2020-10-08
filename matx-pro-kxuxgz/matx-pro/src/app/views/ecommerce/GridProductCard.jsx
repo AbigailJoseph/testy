@@ -54,14 +54,7 @@ const GridProductCard = ({ product }) => {
         </span>
         <img className="w-full" src={product.imgUrl} alt={product.title} />
         <div className="image-box-overlay flex justify-center items-center">
-          <Button
-            variant="outlined"
-            className="bg-default"
-            onClick={() => handleAddProduct(user.userId, product.id)}
-          >
-            <Icon className="mr-2">shopping_cart</Icon>
-            <span>Add to cart</span>
-          </Button>
+          
         </div>
       </div>
       <div className="p-6">

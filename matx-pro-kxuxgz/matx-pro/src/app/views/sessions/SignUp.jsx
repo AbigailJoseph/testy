@@ -45,6 +45,7 @@ const SignUp = () => {
   };
 
   const handleFormSubmit = (event) => {
+    setLoading(true);
     console.log(state);
   };
 
@@ -131,22 +132,24 @@ const SignUp = () => {
                 />
                 <div className="flex items-center">
                 <div className="relative">
+                <Link to="/session/signin">
                   <Button
-                    className="capitalize"
                     variant="contained"
                     color="primary"
                     disabled={loading}
                     type="submit" 
-                    onClick={() => history.push("/session/signin")}
+                    
                   >
                     Sign up
                   </Button> 
+                  
                   {loading && (
                       <CircularProgress
                         size={24}
                         className={classes.buttonProgress}
                       />
                     )}
+                    </Link>
                     </div>
                   <span className="mx-2 ml-5">or</span>
                   <Link to="/session/signin">
