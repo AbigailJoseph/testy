@@ -14,7 +14,7 @@ const Analytics = () => {
     <Fragment>
       <div className="pb-24 pt-7 px-8 ">
         <div className="  text-black  text-40 font-medium">
-          Welcome Abigail!
+          Welcome Fiona!
         </div>
       </div>     
       <div className="analytics m-sm-30 mt--18">

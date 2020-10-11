@@ -38,7 +38,7 @@ const StudyConfirmation = ({ user }) => {
               alt=""
             />
          <div className=" justify-center text-black text-40 font-medium">
-  You have studied [#][#]:[#][#]:[#][#] of [Math]
+  You have studied 00:10:00 minutes of Math
       </div>
       <img
               className="w-200"

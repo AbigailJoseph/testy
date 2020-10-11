@@ -31,7 +31,7 @@ export const navigations = [
     icon: "date_range",
     
   },
- 
+ /*{
   {
     label: "Apps",
     type: "label",
@@ -41,7 +41,7 @@ export const navigations = [
     icon: "file_copy",
 
     children: [
-      /*{
+      
         name: "User List",
         iconText: "L",
         children: [
@@ -83,7 +83,7 @@ export const navigations = [
             iconText: "L",
           },
         ],
-      },*/
+      },
       {
         name: "Help Center",
         iconText: "H",
@@ -402,5 +402,5 @@ export const navigations = [
     icon: "launch",
     type: "extLink",
     path: "http://demos.ui-lib.com/matx-react-doc/",
-  },
+  },*/
 ];

@@ -79,7 +79,7 @@ const EventEditorDialog = ({ event = {}, open, handleClose }) => {
             validators={["required"]}
             errorMessages={["this field is required"]}
           />*/}
-          <h4 className="m-0 text-black justify-between ">Total Hours Studied: [#]</h4>
+          <h4 className="m-0 text-black justify-between ">Total Hours Studied: 4</h4>
           <Fragment>
             <Card className="px-6 py-4 mb-6">
               <div className="card-title">My Time Spent</div>

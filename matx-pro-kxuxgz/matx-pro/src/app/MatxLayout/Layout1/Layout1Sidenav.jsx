@@ -134,20 +134,20 @@ const Layout1Sidenav = () => {
               classes.userInfo
             )}
           >
-            <Avatar
+            {/*<Avatar
               src={user?.photoURL}
               className={clsx({ "w-32 h-32": mode === "compacts" })}
-            />
+            />*/}
             <div
               className={clsx({
                 "ml-4 sidenavHoverShow whitespace-pre overflow-hidden": true,
                 [classes.hideOnCompact]: mode === "compact",
               })}
             >
-              <span className="font-light">{user?.displayName}</span>
+              <span className="font-light">Fiona Falvo</span>
               <div className="user__menu">
-                <MatxMenu
-                  menuButton={
+               {/*<MatxMenu
+                 menuButton={
                     <Tooltip title="Settings">
                       <IconButtonWhite
                         aria-label="Delete"
@@ -167,7 +167,7 @@ const Layout1Sidenav = () => {
                     <Icon> settings </Icon>
                     <span className="pl-4"> Account Setting </span>
                   </MenuItem>
-                </MatxMenu>
+                </MatxMenu> */}
 
                 <Tooltip title="Profile">
                   <IconButtonWhite
